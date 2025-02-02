@@ -396,3 +396,25 @@
 {"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:13:55.758Z"}
 {"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:14:32.258Z"}
 {"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:14:32.263Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:15:58.965Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:15:58.969Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":223.598}","timestamp":"2025-02-02T10:16:05.809Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":1.925}","timestamp":"2025-02-02T10:16:10.367Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":195.817}","timestamp":"2025-02-02T10:16:13.836Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"403\",\"responseTime\":0.779}","timestamp":"2025-02-02T10:16:18.532Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T10:16:21.482Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":71.077}","timestamp":"2025-02-02T10:16:21.484Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":195.772}","timestamp":"2025-02-02T10:16:27.775Z"}
+{"level":"info","message":"Fetching cart for userId: 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T10:16:32.063Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":73.511}","timestamp":"2025-02-02T10:16:32.136Z"}
+{"level":"info","message":"Product 679f21f06a8a2a3554e4b8b9 added to the cart for user 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T10:16:37.779Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":287.409}","timestamp":"2025-02-02T10:16:37.781Z"}
+{"level":"info","message":"Product 679f21f06a8a2a3554e4b8b9 added to the cart for user 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T10:16:38.529Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":286.97}","timestamp":"2025-02-02T10:16:38.531Z"}
+{"level":"info","message":"Product 679f21f06a8a2a3554e4b8b9 added to the cart for user 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T10:16:39.560Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":287.803}","timestamp":"2025-02-02T10:16:39.562Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":208.331}","timestamp":"2025-02-02T10:17:33.272Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":279.735}","timestamp":"2025-02-02T10:17:47.451Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":196.412}","timestamp":"2025-02-02T10:18:06.039Z"}
+{"level":"info","message":"{\"method\":\"DELETE\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":282.761}","timestamp":"2025-02-02T10:18:20.121Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":197.012}","timestamp":"2025-02-02T10:18:24.940Z"}
