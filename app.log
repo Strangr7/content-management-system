@@ -345,3 +345,54 @@
 {"level":"info","message":"Fetching cart for userId: 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T09:55:24.365Z"}
 {"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":131.574}","timestamp":"2025-02-02T09:55:24.496Z"}
 {"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/cart/update\",\"status\":\"404\",\"responseTime\":2.208}","timestamp":"2025-02-02T09:56:11.613Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T09:56:48.603Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T09:56:48.607Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/cart/update\",\"status\":\"404\",\"responseTime\":1.427}","timestamp":"2025-02-02T09:56:56.855Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/update\",\"status\":\"404\",\"responseTime\":0.332}","timestamp":"2025-02-02T09:57:01.556Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/update\",\"status\":\"404\",\"responseTime\":0.281}","timestamp":"2025-02-02T09:57:12.357Z"}
+{"level":"info","message":"Product 679f21f06a8a2a3554e4b8b9 added to the cart for user 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T09:57:30.012Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":227.602}","timestamp":"2025-02-02T09:57:30.015Z"}
+{"level":"info","message":"{\"method\":\"DELETE\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":142.753}","timestamp":"2025-02-02T09:57:33.264Z"}
+{"level":"info","message":"Fetching cart for userId: 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T09:57:35.932Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":71.458}","timestamp":"2025-02-02T09:57:36.003Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/update\",\"status\":\"404\",\"responseTime\":0.209}","timestamp":"2025-02-02T09:57:48.763Z"}
+{"level":"info","message":"Product 679f21f06a8a2a3554e4b8b9 added to the cart for user 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T09:57:53.765Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":208.241}","timestamp":"2025-02-02T09:57:53.766Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/update\",\"status\":\"404\",\"responseTime\":0.305}","timestamp":"2025-02-02T09:58:11.397Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":141.163}","timestamp":"2025-02-02T10:00:09.086Z"}
+{"level":"info","message":"Fetching cart for userId: 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T10:00:14.659Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":139.474}","timestamp":"2025-02-02T10:00:14.798Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"-\",\"responseTime\":null}","timestamp":"2025-02-02T10:00:24.858Z"}
+{"level":"info","message":"Product 679f21f06a8a2a3554e4b8b9 added to the cart for user 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T10:00:24.943Z"}
+{"level":"info","message":"Product 679f21f06a8a2a3554e4b8b9 added to the cart for user 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T10:00:26.537Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":206.656}","timestamp":"2025-02-02T10:00:26.539Z"}
+{"level":"info","message":"Product 679f21f06a8a2a3554e4b8b9 added to the cart for user 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T10:00:35.720Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":209.244}","timestamp":"2025-02-02T10:00:35.721Z"}
+{"level":"info","message":"{\"method\":\"DELETE\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":144.281}","timestamp":"2025-02-02T10:00:41.359Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"200\",\"responseTime\":78.195}","timestamp":"2025-02-02T10:00:49.350Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:08:39.412Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:08:39.417Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:09:15.689Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:09:15.693Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:09:17.515Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:09:17.519Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:09:22.641Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:09:22.645Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:09:27.343Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:09:27.347Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:09:30.509Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:09:30.512Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:09:36.575Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:09:36.579Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:09:40.817Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:09:40.823Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:09:46.347Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:09:46.351Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:10:37.128Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:10:37.132Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:11:31.918Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:11:31.922Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:13:55.753Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:13:55.758Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T10:14:32.258Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T10:14:32.263Z"}

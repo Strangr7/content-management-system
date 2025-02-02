@@ -2,17 +2,15 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 import Cart from "../models/cart.models.js";
 import { APIError } from "../utils/apiError.js";
 import logger from "../utils/logger.js";
-import { APIResponse } from "../utils/apiResponse.js"; // Assuming this is defined
+import { APIResponse } from "../utils/apiResponse.js"; 
 import Product from "../models/product.models.js";
 
 // Fetch cart
 const getCart = asyncHandler(async (req, res) => {
   const userId = req.user._id;
 
-  // Log userId for debugging purposes, but avoid exposing sensitive information
   logger.info(`Fetching cart for userId: ${userId}`);
 
-  // Ensure userId is present
   if (!userId) {
     throw new APIError(400, "User ID not found");
   }
@@ -23,7 +21,6 @@ const getCart = asyncHandler(async (req, res) => {
     throw new APIError(404, "Cart not found");
   }
 
-  // Send response using APIResponse
   res.status(200).json(new APIResponse(200, cart, "Cart fetched successfully"));
 });
 
@@ -33,62 +30,56 @@ const addToCart = asyncHandler(async (req, res) => {
   const userId = req.user._id;
 
   if (!productId || !quantity || quantity <= 0) {
-    throw new APIError(
-      400,
-      "Product ID and quantity are required and quantity should be greater than 0"
-    );
+    throw new APIError(400, "Product ID and quantity are required and quantity should be greater than 0");
   }
 
-  // Find the product in the database
   const product = await Product.findById(productId);
   if (!product) {
     throw new APIError(404, "Product not found");
   }
 
-  // Get the price of the product
+  // Check stock availability
+  if (product.total_number < quantity) {
+    throw new APIError(400, "Insufficient stock");
+  }
+
+  // Deduct the quantity from product stock
+  product.total_number -= quantity;
+  await product.save();
+
   const price = product.price;
 
-  // Try to find the user's cart
   let cart = await Cart.findOne({ user: userId });
 
-  // If cart doesn't exist, create a new one
   if (!cart) {
     cart = new Cart({
       user: userId,
       items: [{ product: productId, quantity, price }],
     });
   } else {
-    // If the cart exists, check if the product is already in the cart
     const productInCart = cart.items.find(
       (item) => item.product.toString() === productId
     );
 
     if (productInCart) {
-      // If the product is in the cart, increase its quantity and price
       productInCart.quantity += quantity;
     } else {
-      // If the product is not in the cart, add it
       cart.items.push({ product: productId, quantity, price });
     }
   }
 
-  // Recalculate the total price
   cart.totalPrice = cart.items.reduce(
     (total, item) => total + item.price * item.quantity,
     0
   );
 
-  // Save the updated cart
   await cart.save();
 
-  // Log the result for debugging
   logger.info(`Product ${productId} added to the cart for user ${userId}`);
-  res
-    .status(200)
-    .json(new APIResponse(200, cart, "Product added to cart successfully"));
+  res.status(200).json(new APIResponse(200, cart, "Product added to cart successfully"));
 });
 
-//update cart
+// Update cart
 const updateCart = asyncHandler(async (req, res) => {
   const { productId, quantity } = req.body;
   const userId = req.user._id;
@@ -96,54 +87,82 @@ const updateCart = asyncHandler(async (req, res) => {
   if (quantity === undefined || quantity < 0) {
     throw new APIError(400, "Quantity is required and should be 0 or greater");
   }
+
   const product = await Product.findById(productId);
   if (!product) {
     throw new APIError(404, "Product not found");
   }
-  let cart = await Cart.findOne({ user: userId });
+
+  const cart = await Cart.findOne({ user: userId });
   if (!cart) {
     throw new APIError(404, "Cart not found");
   }
+
   const productInCart = cart.items.find(
     (item) => item.product.toString() === productId
   );
   if (!productInCart) {
     throw new APIError(404, "Product not in cart");
   }
+
+  // Calculate the difference in quantity
+  const previousQuantity = productInCart.quantity;
+  const quantityDifference = quantity - previousQuantity;
+
+  // If quantity is updated to 0, remove the item from cart
   if (quantity === 0) {
-    cart.items = cart.items.filter(
-      (item) => item.product.toString() !== productId
-    );
+    cart.items = cart.items.filter((item) => item.product.toString() !== productId);
   } else {
+    // Update the product quantity in the cart
     productInCart.quantity = quantity;
   }
+
+  // Adjust the stock in the product collection
+  if (quantityDifference > 0) {
+    if (product.total_number < quantityDifference) {
+      throw new APIError(400, "Insufficient stock");
+    }
+    product.total_number -= quantityDifference;
+  } else {
+    product.total_number += Math.abs(quantityDifference); // Return stock if quantity decreases
+  }
+
+  await product.save();
+
+  // Recalculate the total price for the cart
   cart.totalPrice = cart.items.reduce(
     (total, item) => total + item.price * item.quantity,
     0
   );
+
+  await cart.save();
+
   res.status(200).json(new APIResponse(200, cart, "Cart updated successfully"));
 });
 
-//clear cart
+// Clear cart
 const clearCart = asyncHandler(async (req, res) => {
   const userId = req.user._id;
 
-  // Fetch the user's cart
   const cart = await Cart.findOne({ user: userId });
-
-  // If the cart does not exist, throw an error
   if (!cart) {
     throw new APIError(404, "Cart not found");
   }
 
-  // Clear the items and reset the total price
-  cart.items = []; // Reset items to an empty array
-  cart.totalPrice = 0; // Reset the total price to 0
+  // Restore the total_number for each product in the cart
+  for (const item of cart.items) {
+    const product = await Product.findById(item.product);
+    if (product) {
+      product.total_number += item.quantity;
+      await product.save();
+    }
+  }
 
-  // Save the updated cart to the database
+  cart.items = [];
+  cart.totalPrice = 0;
+
   await cart.save();
 
-  // Respond with the cleared cart
   res.status(200).json(new APIResponse(200, cart, "Cart cleared successfully"));
 });
 
