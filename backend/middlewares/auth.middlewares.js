@@ -1,13 +1,14 @@
 // middleware/auth.middlewares.js
 import jwt from "jsonwebtoken";
-import { APIResponse } from "../utils/APIResponse.js";
-import { APIError } from "../utils/APIError.js";
+import { APIResponse } from "../utils/apiResponse.js";
 
 const authenticatedMiddleware = (req, res, next) => {
   const accessToken = req.headers.authorization?.split(" ")[1]; // Extract token from the Authorization header
 
   if (!accessToken) {
-    return res.status(401).json(new APIResponse(401, null, "Access token is required"));
+    return res
+      .status(401)
+      .json(new APIResponse(401, null, "Access token is required"));
   }
 
   try {
@@ -15,7 +16,9 @@ const authenticatedMiddleware = (req, res, next) => {
     req.user = decoded; // Attach user info to the request object (like _id and role)
     next(); // Proceed to the next middleware or route handler
   } catch (error) {
-    return res.status(403).json(new APIResponse(403, null, "Invalid or expired access token"));
+    return res
+      .status(403)
+      .json(new APIResponse(403, null, "Invalid or expired access token"));
   }
 };
 

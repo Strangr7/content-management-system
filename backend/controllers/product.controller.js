@@ -1,13 +1,22 @@
 import Product from "../models/product.models.js";
 import Category from "../models/category.models.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
-import { APIResponse } from "../utils/APIResponse.js";
-import { APIError } from "../utils/APIError.js";
+import { APIError } from "../utils/apiError.js";
+import { APIResponse } from "../utils/apiResponse.js";
 import logger from "../utils/logger.js";
 import mongoose from "mongoose";
 
-
-
+// Helper function to build product filter
+const buildProductFilter = (categoryId, status, minPrice, maxPrice) => {
+  const filter = categoryId ? { category: categoryId } : {};
+  if (status) filter.status = status;
+  if (minPrice || maxPrice) {
+    filter.price = {};
+    if (minPrice) filter.price.$gte = parseFloat(minPrice);
+    if (maxPrice) filter.price.$lte = parseFloat(maxPrice);
+  }
+  return filter;
+};
 
 // Create product
 const createProduct = asyncHandler(async (req, res) => {
@@ -17,12 +26,23 @@ const createProduct = asyncHandler(async (req, res) => {
   if (!category || !price || !total_number) {
     throw new APIError(400, "Category, price, and total number are required");
   }
-  if (price < 0 || discount < 0 || total_number < 0) {
-    throw new APIError(400, "Price, discount, and total number cannot be negative");
+  if (
+    typeof price !== "number" ||
+    typeof total_number !== "number" ||
+    (discount && typeof discount !== "number")
+  ) {
+    throw new APIError(
+      400,
+      "Price, discount, and total number must be valid numbers"
+    );
   }
-
-  // Check discount
-  if (discount > price) {
+  if (price < 0 || (discount && discount < 0) || total_number < 0) {
+    throw new APIError(
+      400,
+      "Price, discount, and total number cannot be negative"
+    );
+  }
+  if (discount && discount > price) {
     throw new APIError(400, "Discount cannot be greater than price");
   }
 
@@ -37,7 +57,9 @@ const createProduct = asyncHandler(async (req, res) => {
   await product.save();
   logger.info("Product created successfully");
 
-  res.status(201).json(new APIResponse(201, "Product created successfully", product));
+  res
+    .status(201)
+    .json(new APIResponse(201, product, "Product created successfully"));
 });
 
 // Get all products
@@ -53,36 +75,40 @@ const getProducts = asyncHandler(async (req, res) => {
     maxPrice,
   } = req.query;
 
-  // Filteration
-  const filter = {};
-  if (status) filter.status = status;
-  if (category) filter.category = category;
-  if (minPrice || maxPrice) {
-    filter.price = {};
-    if (minPrice) filter.price.$gte = parseFloat(minPrice);
-    if (maxPrice) filter.price.$lte = parseFloat(maxPrice);
-  }
+  // Validate pagination inputs
+  const pageNumber = parseInt(page) || 1;
+  const limitNumber = parseInt(limit) || 9;
+
+  // Build filter
+  const filter = buildProductFilter(category, status, minPrice, maxPrice);
 
   // Fetch products with pagination, filtering, and sorting
   const products = await Product.find(filter)
     .populate("category", "name")
     .sort({ [sortBy]: sortOrder === "desc" ? -1 : 1 })
-    .limit(parseInt(limit))
-    .skip((page - 1) * limit);
+    .limit(limitNumber)
+    .skip((pageNumber - 1) * limitNumber);
 
-  const totalProducts = await Product.countDocuments(filter); // Fixed typo
+  const totalProducts = await Product.countDocuments(filter);
 
-  res.status(200).json({
-    message: "Products fetched successfully",
-    totalProducts,
-    currentPage: parseInt(page),
-    totalPages: Math.ceil(totalProducts / limit),
-    products,
-  });
+  res
+    .status(200)
+    .json(
+      new APIResponse(
+        200,
+        {
+          products,
+          totalProducts,
+          currentPage: pageNumber,
+          totalPages: Math.ceil(totalProducts / limitNumber),
+        },
+        "Products fetched successfully"
+      )
+    );
 });
 
 // Get all products for a specific category
-const getProductbyCategory = asyncHandler(async (req, res) => { // Added req and res
+const getProductbyCategory = asyncHandler(async (req, res) => {
   const { categoryId } = req.params;
   const {
     page = 1,
@@ -105,14 +131,8 @@ const getProductbyCategory = asyncHandler(async (req, res) => { // Added req and
     throw new APIError(404, "Category not found");
   }
 
-  // Build the filter object
-  const filter = { category: categoryId };
-  if (status) filter.status = status;
-  if (minPrice || maxPrice) {
-    filter.price = {};
-    if (minPrice) filter.price.$gte = parseFloat(minPrice);
-    if (maxPrice) filter.price.$lte = parseFloat(maxPrice);
-  }
+  // Build filter
+  const filter = buildProductFilter(categoryId, status, minPrice, maxPrice);
 
   // Fetch products with pagination, filtering, and sorting
   const products = await Product.find(filter)
@@ -121,37 +141,53 @@ const getProductbyCategory = asyncHandler(async (req, res) => { // Added req and
     .limit(parseInt(limit))
     .skip((page - 1) * limit);
 
-  // Count total number of products in this category
   const totalProducts = await Product.countDocuments(filter);
 
-  res.status(200).json({
-    message: "Products fetched successfully",
-    totalProducts,
-    currentPage: parseInt(page),
-    totalPages: Math.ceil(totalProducts / limit),
-    products,
-  });
+  res
+    .status(200)
+    .json(
+      new APIResponse(
+        200,
+        {
+          products,
+          totalProducts,
+          currentPage: parseInt(page),
+          totalPages: Math.ceil(totalProducts / limit),
+        },
+        "Products fetched successfully"
+      )
+    );
 });
 
 // Get a specific product by ID
 const getProductbyId = asyncHandler(async (req, res) => {
-  const { id } = req.params; // Use consistent naming
+  const { id } = req.params;
+
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    throw new APIError(400, "Invalid product ID");
+  }
 
   const product = await Product.findById(id).populate("category", "name");
   if (!product) {
     throw new APIError(404, "Product not found");
   }
 
-  res.status(200).json(new APIResponse(200, product, "Product fetched successfully"));
+  res
+    .status(200)
+    .json(new APIResponse(200, product, "Product fetched successfully"));
 });
 
 // Update product
 const updateProduct = asyncHandler(async (req, res) => {
-  const { id } = req.params; // Use consistent naming
+  const { id } = req.params;
   const { category, price, discount } = req.body;
 
-  if (discount > price) {
-    throw new APIError(400, "Discount cannot be greater than price"); // Use APIError
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    throw new APIError(400, "Invalid product ID");
+  }
+
+  if (discount && discount > price) {
+    throw new APIError(400, "Discount cannot be greater than price");
   }
 
   // Check if the referenced category exists
@@ -172,21 +208,29 @@ const updateProduct = asyncHandler(async (req, res) => {
     throw new APIError(404, "Product not found");
   }
 
-  logger.info(`Product with ID ${id} updated successfully`); // Add logging
-  res.status(200).json(new APIResponse(200, product, "Product updated successfully"));
+  logger.info(`Product with ID ${id} updated successfully`);
+  res
+    .status(200)
+    .json(new APIResponse(200, product, "Product updated successfully"));
 });
 
 // Delete product
 const deleteProduct = asyncHandler(async (req, res) => {
-  const { id } = req.params; // Use consistent naming
+  const { id } = req.params;
 
-  const product = await Product.findByIdAndDelete(id); // Fixed typo
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    throw new APIError(400, "Invalid product ID");
+  }
+
+  const product = await Product.findByIdAndDelete(id);
   if (!product) {
     throw new APIError(404, "Product not found");
   }
 
-  logger.info(`Product with ID ${id} deleted successfully`); // Add logging
-  res.status(200).json(new APIResponse(200, "Product deleted successfully"));
+  logger.info(`Product with ID ${id} deleted successfully`);
+  res
+    .status(200)
+    .json(new APIResponse(200, null, "Product deleted successfully"));
 });
 
 export {

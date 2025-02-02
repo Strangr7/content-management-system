@@ -5,35 +5,41 @@ import logger from "../utils/logger.js";
 const errorHandler = (err, req, res, next) => {
   let error = err;
 
-  // Log the error using Winston
+  // Log error details using Winston
   logger.error({
     message: error.message,
     stack: error.stack,
     statusCode: error.statusCode,
   });
 
-  // Check if it's not an instance of the custom APIError
-  if (!(error instanceof APIError)) {
-    // Determine the status code based on the error type
-    const statusCode =
-      error.statusCode || (error instanceof mongoose.Error ? 400 : 500);
+  // Handle Mongoose-specific errors
+  if (err instanceof mongoose.Error.ValidationError) {
+    error = new APIError(400, "Validation failed", err.errors);
+  } else if (err instanceof mongoose.Error.CastError) {
+    error = new APIError(400, `Invalid value for ${err.path}`);
+  } else if (err.code === 11000) {
+    error = new APIError(409, "Duplicate key error");
+  } else if (!(error instanceof APIError)) {
+    const statusCode = error.statusCode || 500;
     const message = error.message || "Something went wrong";
-    error = new APIError(statusCode, message, error?.errors || [], err.stack);
+    error = new APIError(statusCode, message, [], err.stack);
   }
 
-  // Sanitize error message in production
-  const sanitizedMessage =
-    process.env.NODE_ENV === "production"
-      ? "Something went wrong"
-      : error.message;
-
+  // Sanitize response message
   const response = {
-    ...error,
-    message: sanitizedMessage,
+    statusCode: error.statusCode,
+    message:
+      process.env.NODE_ENV === "production"
+        ? "Something went wrong"
+        : error.message,
     ...(process.env.NODE_ENV === "development" ? { stack: error.stack } : {}),
   };
 
   return res.status(error.statusCode).json(response);
 };
 
-export { errorHandler };
+// Async wrapper for controllers
+const asyncHandler = (fn) => (req, res, next) =>
+  Promise.resolve(fn(req, res, next)).catch(next);
+
+export { errorHandler, asyncHandler };

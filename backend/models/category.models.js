@@ -6,8 +6,8 @@ const categorySchema = new Schema(
       type: String,
       required: [true, "Category name is required"],
       unique: true,
+      index:true,
     },
-   
   },
   { timestamps: true }
 );

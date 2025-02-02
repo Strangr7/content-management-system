@@ -8,6 +8,7 @@ User
 => role
 **added later**
 => refreshToken
+=> purchaseHistory
 => timestapms
 
 product

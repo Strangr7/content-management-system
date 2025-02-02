@@ -5,7 +5,8 @@ import morgan from "morgan";
 import { errorHandler } from "./middlewares/error.middlewares.js";
 import userRoutes from "./routes/user.routes.js";
 import productRoutes from "./routes/product.routes.js";
-import categoryRoutes from "./routes/category.routes.js"
+import categoryRoutes from "./routes/category.routes.js";
+import cartRoutes from "./routes/cart.routes.js";
 import logger from "./utils/logger.js";
 
 const app = express();
@@ -43,7 +44,8 @@ app.use(
 //routes
 app.use("/api/auth", userRoutes);
 app.use("/api/products", productRoutes);
-app.use("/api/category",categoryRoutes)
+app.use("/api/category", categoryRoutes);
+app.use("/api/cart", cartRoutes);
 
 app.use(errorHandler);
 export { app };
