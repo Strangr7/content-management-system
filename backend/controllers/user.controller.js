@@ -2,7 +2,7 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 import User from "../models/user.models.js";
 import Cart from "../models/cart.models.js";
 import { APIError } from "../utils/apiError.js";
-import { APIResponse } from "../utils/apiResponse.js";
+import { APIResponse } from "../utils/APIResponse.js";
 import logger from "../utils/logger.js";
 import jwt from "jsonwebtoken";
 

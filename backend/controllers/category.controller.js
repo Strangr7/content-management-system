@@ -49,12 +49,12 @@ const getCategories = asyncHandler(async (req, res) => {
   if (!categories.length) {
     return res
       .status(200)
-      .json(new APIResponse(200, [], "No categories found"));
+      .json(new APIResponse(400, [], "No categories found"));
   }
 
   res
     .status(200)
-    .json(new APIResponse(200, categories, "Categories fetched successfully"));
+    .json(new APIResponse(201, categories, "Categories fetched successfully"));
 });
 
 // Update category (to be implemented)

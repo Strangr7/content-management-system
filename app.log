@@ -418,3 +418,754 @@
 {"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":196.412}","timestamp":"2025-02-02T10:18:06.039Z"}
 {"level":"info","message":"{\"method\":\"DELETE\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":282.761}","timestamp":"2025-02-02T10:18:20.121Z"}
 {"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":197.012}","timestamp":"2025-02-02T10:18:24.940Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T13:34:43.565Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T13:34:43.577Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"401\",\"responseTime\":2.023}","timestamp":"2025-02-02T13:35:20.572Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"403\",\"responseTime\":3.758}","timestamp":"2025-02-02T13:35:35.256Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":217.746}","timestamp":"2025-02-02T13:35:38.274Z"}
+{"level":"error","message":"Cart is empty","stack":"Error: Cart is empty\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/order.controller.js:15:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T13:35:59.630Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"400\",\"responseTime\":81.694}","timestamp":"2025-02-02T13:35:59.632Z"}
+{"level":"info","message":"Fetching cart for userId: 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T13:36:37.780Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":72.375}","timestamp":"2025-02-02T13:36:37.851Z"}
+{"level":"info","message":"Product 679f21f06a8a2a3554e4b8b9 added to the cart for user 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T13:36:42.690Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":301.566}","timestamp":"2025-02-02T13:36:42.694Z"}
+{"level":"info","message":"Product 679f21f06a8a2a3554e4b8b9 added to the cart for user 679f281b36ac54d763dd0d6a","timestamp":"2025-02-02T13:36:43.639Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":278.859}","timestamp":"2025-02-02T13:36:43.641Z"}
+{"level":"error","message":"Order validation failed: paymentMethod: `Pending` is not a valid enum value for path `paymentMethod`., shippingAddress: Path `shippingAddress` is required.","stack":"ValidationError: Order validation failed: paymentMethod: `Pending` is not a valid enum value for path `paymentMethod`., shippingAddress: Path `shippingAddress` is required.\n    at Document.invalidate (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\document.js:3334:32)\n    at C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\document.js:3095:17\n    at C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1407:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2025-02-02T13:36:50.513Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"400\",\"responseTime\":221.293}","timestamp":"2025-02-02T13:36:50.516Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"201\",\"responseTime\":428.899}","timestamp":"2025-02-02T13:37:26.923Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:07:55.324Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:07:55.332Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/payment/\",\"status\":\"401\",\"responseTime\":2.006}","timestamp":"2025-02-02T15:09:03.768Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":233.345}","timestamp":"2025-02-02T15:09:24.675Z"}
+{"level":"error","message":"Cannot access 'order' before initialization","stack":"ReferenceError: Cannot access 'order' before initialization\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/payment.controller.js:9:17\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/utils/asyncHandler.js:3:21\n    at Layer.handle [as handle_request] (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at authenticatedMiddleware (file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/middlewares/auth.middlewares.js:17:5)\n    at Layer.handle [as handle_request] (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\express\\lib\\router\\index.js:284:15","timestamp":"2025-02-02T15:09:31.364Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/payment/\",\"status\":\"500\",\"responseTime\":3.215}","timestamp":"2025-02-02T15:09:31.365Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:09:43.689Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:09:43.695Z"}
+{"level":"error","message":"Cannot read properties of null (reading 'status')","stack":"TypeError: Cannot read properties of null (reading 'status')\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/payment.controller.js:13:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-02-02T15:09:46.449Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/payment/\",\"status\":\"500\",\"responseTime\":84.122}","timestamp":"2025-02-02T15:09:46.463Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:17:56.091Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:17:56.101Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:18:51.139Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:18:51.151Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":217.175}","timestamp":"2025-02-02T15:19:05.912Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:20:02.343Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:20:02.348Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:21:49.084Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:21:49.096Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:21:52.199Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:21:52.205Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:22:29.435Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:22:29.439Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:22:47.670Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:22:47.674Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:24:57.703Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:24:57.711Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:25:23.965Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:25:23.970Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:26:32.128Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:26:32.136Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":222.856}","timestamp":"2025-02-02T15:26:39.454Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:29:52.996Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:29:53.004Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:29:57.226Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:29:57.236Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T15:32:48.455Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T15:32:48.460Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T16:49:20.599Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T16:49:20.616Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":246.546}","timestamp":"2025-02-02T16:49:25.298Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/\",\"status\":\"404\",\"responseTime\":1.61}","timestamp":"2025-02-02T16:49:49.107Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/order/\",\"status\":\"200\",\"responseTime\":77.941}","timestamp":"2025-02-02T16:49:59.262Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:01:07.525Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:01:07.531Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:01:12.238Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:01:12.253Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:01:18.202Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:01:18.206Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:01:20.622Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:01:20.631Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:01:32.098Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:01:32.110Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:01:37.012Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:01:37.018Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:01:41.113Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:01:41.122Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:02:36.423Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:02:36.427Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:02:45.349Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:02:45.354Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:02:47.359Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:02:47.368Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:02:53.030Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:02:53.041Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:02:55.930Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:02:55.941Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:03:13.576Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:03:13.582Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:03:15.595Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:03:15.606Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:03:31.872Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:03:31.879Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:03:37.614Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:03:37.619Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:03:40.664Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:03:40.670Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:03:43.341Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:03:43.352Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:03:45.510Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:03:45.515Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:03:47.987Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:03:47.995Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:03:50.216Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:03:50.222Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:03:56.499Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:03:56.503Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:00.305Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:00.312Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:02.482Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:02.492Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:05.591Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:05.605Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:09.693Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:09.699Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:12.180Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:12.190Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:16.562Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:16.573Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:20.871Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:20.882Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:22.777Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:22.789Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:24.906Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:24.913Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:27.611Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:27.621Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:32.326Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:32.332Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:41.032Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:41.043Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:04:47.081Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:04:47.087Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:00.622Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:00.631Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:09.717Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:09.722Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:12.355Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:12.359Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:15.378Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:15.385Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:18.089Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:18.093Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:20.993Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:20.998Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:24.398Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:24.405Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:30.876Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:30.881Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:35.895Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:35.909Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:39.302Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:39.306Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:40.875Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:40.884Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:43.660Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:43.665Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:48.102Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:48.107Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:51.776Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:51.784Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:05:53.953Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:05:53.961Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:06:01.722Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:06:01.728Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:06:04.062Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:06:04.066Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:06:08.443Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:06:08.454Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:06:12.638Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:06:12.644Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:06:20.462Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:06:20.471Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:06:22.299Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:06:22.303Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:28:39.734Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:28:39.747Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:29:06.072Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:29:06.083Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:29:13.098Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:29:13.107Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:29:15.611Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:29:15.619Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:29:17.907Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:29:17.919Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:29:38.418Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:29:38.424Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:29:45.401Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:29:45.434Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:29:49.390Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:29:49.396Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:29:52.111Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:29:52.117Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:30:00.519Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:30:00.523Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:30:04.290Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:30:04.294Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:30:07.861Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:30:07.871Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:30:29.215Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:30:29.225Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:30:39.985Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:30:39.993Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:30:48.025Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:30:48.032Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:30:50.094Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:30:50.099Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:30:55.943Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:30:55.947Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:30:58.175Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:30:58.184Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:31:00.199Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:31:00.203Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:31:16.122Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:31:16.130Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:31:27.685Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:31:27.690Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:31:31.746Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:31:31.750Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:31:38.830Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:31:38.835Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:31:41.233Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:31:41.240Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:31:44.173Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:31:44.179Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:31:51.778Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:31:51.784Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:31:57.284Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:31:57.290Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:32:04.870Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:32:04.875Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:32:09.322Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:32:09.328Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:32:11.229Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:32:11.238Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:32:15.820Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:32:15.831Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:32:21.241Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:32:21.246Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:32:24.662Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:32:24.666Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:32:27.560Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:32:27.565Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:32:29.055Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:32:29.065Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:32:30.934Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:32:30.946Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:32:33.731Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:32:33.741Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:32:37.547Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:32:37.557Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:33:55.653Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:33:55.662Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:34:00.654Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:34:00.663Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/review/\",\"status\":\"404\",\"responseTime\":1.887}","timestamp":"2025-02-02T17:34:40.306Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/review/\",\"status\":\"404\",\"responseTime\":0.926}","timestamp":"2025-02-02T17:35:05.098Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/review/\",\"status\":\"404\",\"responseTime\":0.321}","timestamp":"2025-02-02T17:35:10.851Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:35:33.459Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:35:33.470Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/review/\",\"status\":\"404\",\"responseTime\":1.447}","timestamp":"2025-02-02T17:35:38.144Z"}
+{"level":"error","message":"User not found","stack":"Error: User not found\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:112:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":404,"timestamp":"2025-02-02T17:35:47.971Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"404\",\"responseTime\":72.615}","timestamp":"2025-02-02T17:35:47.975Z"}
+{"level":"info","message":"Cart created successfully","timestamp":"2025-02-02T17:35:56.664Z","user_id":"679facfcbddeaf7206594eee"}
+{"level":"info","message":"User created successfully","timestamp":"2025-02-02T17:35:56.754Z","username":"nil"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"201\",\"responseTime\":543.925}","timestamp":"2025-02-02T17:35:56.756Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":356.316}","timestamp":"2025-02-02T17:36:01.014Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/review/\",\"status\":\"404\",\"responseTime\":0.301}","timestamp":"2025-02-02T17:36:05.501Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:36:27.293Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:36:27.299Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/review/\",\"status\":\"200\",\"responseTime\":77.894}","timestamp":"2025-02-02T17:36:29.813Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/review/\",\"status\":\"401\",\"responseTime\":0.773}","timestamp":"2025-02-02T17:36:44.318Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/review/\",\"status\":\"200\",\"responseTime\":69.684}","timestamp":"2025-02-02T17:39:12.842Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:42:30.633Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:42:30.638Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:42:39.929Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:42:39.939Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:43:46.088Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:43:46.093Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:44:03.656Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:44:03.661Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:44:12.134Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:44:12.147Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:45:09.381Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:45:09.385Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:45:20.628Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:45:20.633Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:46:37.042Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:46:37.048Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:46:44.485Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:46:44.489Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:48:25.214Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:48:25.223Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:48:29.510Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:48:29.520Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:48:31.715Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:48:31.719Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T17:55:15.461Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T17:55:15.468Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T18:12:28.880Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T18:12:28.895Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T18:12:39.364Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":87.03}","timestamp":"2025-02-02T18:12:39.384Z"}
+{"level":"info","message":"Cart created successfully","timestamp":"2025-02-02T18:13:03.659Z","user_id":"679fb5af5f0d10187d024af6"}
+{"level":"info","message":"User created successfully","timestamp":"2025-02-02T18:13:03.738Z","username":"nil"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"201\",\"responseTime\":552.951}","timestamp":"2025-02-02T18:13:03.740Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":350.449}","timestamp":"2025-02-02T18:13:07.011Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"403\",\"responseTime\":0.714}","timestamp":"2025-02-02T18:13:09.211Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"403\",\"responseTime\":4.043}","timestamp":"2025-02-02T18:13:14.639Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":358.137}","timestamp":"2025-02-02T18:13:28.184Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"200\",\"responseTime\":83.247}","timestamp":"2025-02-02T18:13:31.448Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"401\",\"responseTime\":0.394}","timestamp":"2025-02-02T18:13:37.511Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":348.929}","timestamp":"2025-02-02T18:13:41.028Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":67.045}","timestamp":"2025-02-02T18:13:42.814Z"}
+{"level":"error","message":"Invalid Category","stack":"Error: Invalid Category\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T18:13:53.086Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":66.898}","timestamp":"2025-02-02T18:13:53.087Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.856}","timestamp":"2025-02-02T18:14:01.109Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":159.144}","timestamp":"2025-02-02T18:14:04.429Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.199}","timestamp":"2025-02-02T18:14:06.187Z"}
+{"level":"error","message":"Invalid Category","stack":"Error: Invalid Category\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T18:14:10.557Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":68.424}","timestamp":"2025-02-02T18:14:10.560Z"}
+{"level":"info","message":"Product created successfully","timestamp":"2025-02-02T18:14:29.126Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"201\",\"responseTime\":154.58}","timestamp":"2025-02-02T18:14:29.129Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":204.998}","timestamp":"2025-02-02T18:14:33.395Z"}
+{"level":"info","message":"Fetching cart for userId: 679fb5af5f0d10187d024af6","timestamp":"2025-02-02T18:14:42.817Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":68.962}","timestamp":"2025-02-02T18:14:42.886Z"}
+{"level":"error","message":"Product not found","stack":"Error: Product not found\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/cart.controller.js:38:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":404,"timestamp":"2025-02-02T18:14:46.220Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"404\",\"responseTime\":72.184}","timestamp":"2025-02-02T18:14:46.221Z"}
+{"level":"info","message":"Product 679fb6055f0d10187d024b0d added to the cart for user 679fb5af5f0d10187d024af6","timestamp":"2025-02-02T18:15:01.700Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":286.87}","timestamp":"2025-02-02T18:15:01.702Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/cart/\",\"status\":\"404\",\"responseTime\":0.809}","timestamp":"2025-02-02T18:15:21.812Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/679fb5af5f0d10187d024af8\",\"status\":\"404\",\"responseTime\":0.504}","timestamp":"2025-02-02T18:16:05.584Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/cart/679fb5af5f0d10187d024af8\",\"status\":\"200\",\"responseTime\":298.452}","timestamp":"2025-02-02T18:16:18.021Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"201\",\"responseTime\":421.924}","timestamp":"2025-02-02T18:16:35.955Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/order/\",\"status\":\"200\",\"responseTime\":70.823}","timestamp":"2025-02-02T18:16:45.310Z"}
+{"level":"error","message":"Order not found with id 679f75165e8a25d9be4adce3","stack":"Error: Order not found with id 679f75165e8a25d9be4adce3\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/payment.controller.js:11:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":404,"timestamp":"2025-02-02T18:17:03.111Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/payment/\",\"status\":\"404\",\"responseTime\":67.39}","timestamp":"2025-02-02T18:17:03.113Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"200\",\"responseTime\":80.714}","timestamp":"2025-02-02T18:17:26.044Z"}
+{"level":"info","message":"Cart created successfully","timestamp":"2025-02-02T18:18:17.771Z","user_id":"679fb6e95f0d10187d024b2d"}
+{"level":"info","message":"User created successfully","timestamp":"2025-02-02T18:18:17.844Z","username":"nil"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"201\",\"responseTime\":529.315}","timestamp":"2025-02-02T18:18:17.845Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":350.113}","timestamp":"2025-02-02T18:18:21.180Z"}
+{"level":"error","message":"Invalid Category","stack":"Error: Invalid Category\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T18:18:23.800Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":66.021}","timestamp":"2025-02-02T18:18:23.801Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":153.324}","timestamp":"2025-02-02T18:18:29.388Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.151}","timestamp":"2025-02-02T18:18:33.910Z"}
+{"level":"info","message":"Product created successfully","timestamp":"2025-02-02T18:18:41.279Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"201\",\"responseTime\":163.817}","timestamp":"2025-02-02T18:18:41.280Z"}
+{"level":"info","message":"Fetching cart for userId: 679fb6e95f0d10187d024b2d","timestamp":"2025-02-02T18:18:44.696Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":69.931}","timestamp":"2025-02-02T18:18:44.766Z"}
+{"level":"error","message":"Product not found","stack":"Error: Product not found\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/cart.controller.js:38:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":404,"timestamp":"2025-02-02T18:19:00.548Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"404\",\"responseTime\":65.851}","timestamp":"2025-02-02T18:19:00.549Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":198.979}","timestamp":"2025-02-02T18:19:07.030Z"}
+{"level":"info","message":"Product 679fb7015f0d10187d024b3c added to the cart for user 679fb6e95f0d10187d024b2d","timestamp":"2025-02-02T18:19:15.439Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":277.462}","timestamp":"2025-02-02T18:19:15.440Z"}
+{"level":"error","message":"Product not found","stack":"Error: Product not found\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/cart.controller.js:93:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":404,"timestamp":"2025-02-02T18:19:26.893Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/cart/:cartId\",\"status\":\"404\",\"responseTime\":67.482}","timestamp":"2025-02-02T18:19:26.894Z"}
+{"level":"info","message":"Cart created successfully","timestamp":"2025-02-02T18:22:34.345Z","user_id":"679fb7e95f0d10187d024b4a"}
+{"level":"info","message":"User created successfully","timestamp":"2025-02-02T18:22:34.424Z","username":"nil"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"201\",\"responseTime\":537.868}","timestamp":"2025-02-02T18:22:34.426Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":353.66}","timestamp":"2025-02-02T18:22:36.662Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":154.235}","timestamp":"2025-02-02T18:22:50.849Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":157.396}","timestamp":"2025-02-02T18:24:49.158Z"}
+{"level":"error","message":"Duplicate categories found: vbf, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T18:25:10.688Z"}
+{"level":"error","message":"The following categories already exist: vbf, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: vbf, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T18:25:10.689Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":67.864}","timestamp":"2025-02-02T18:25:10.690Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":158.146}","timestamp":"2025-02-02T18:25:38.921Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":153.099}","timestamp":"2025-02-02T18:26:09.327Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":69.118}","timestamp":"2025-02-02T18:26:47.067Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":69.463}","timestamp":"2025-02-02T18:26:59.851Z"}
+{"level":"error","message":"Duplicate categories found: vbf, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T18:27:49.875Z"}
+{"level":"error","message":"The following categories already exist: vbf, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: vbf, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T18:27:49.876Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":70.307}","timestamp":"2025-02-02T18:27:49.879Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":162.441}","timestamp":"2025-02-02T18:28:16.714Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"200\",\"responseTime\":74.012}","timestamp":"2025-02-02T18:29:48.904Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T18:34:10.828Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T18:34:10.843Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T20:31:11.663Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T20:31:11.669Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":157.301}","timestamp":"2025-02-02T20:31:14.422Z"}
+{"level":"error","message":"Duplicate categories found: bfgb, jfkdgbfbrtsf, vbf","timestamp":"2025-02-02T20:31:40.743Z"}
+{"level":"error","message":"The following categories already exist: bfgb, jfkdgbfbrtsf, vbf","stack":"Error: The following categories already exist: bfgb, jfkdgbfbrtsf, vbf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T20:31:40.746Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":76.034}","timestamp":"2025-02-02T20:31:40.750Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":161.341}","timestamp":"2025-02-02T20:33:35.130Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":162.582}","timestamp":"2025-02-02T20:35:55.275Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T20:37:45.615Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T20:37:45.617Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":71.889}","timestamp":"2025-02-02T20:37:45.620Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":176.066}","timestamp":"2025-02-02T20:38:21.240Z"}
+{"level":"info","message":"Cart created successfully","timestamp":"2025-02-02T20:38:57.015Z","user_id":"679fd7e074736088d2be0f2a"}
+{"level":"info","message":"User created successfully","timestamp":"2025-02-02T20:38:57.095Z","username":"nil"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"201\",\"responseTime\":542.37}","timestamp":"2025-02-02T20:38:57.096Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":343.13}","timestamp":"2025-02-02T20:38:59.269Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":69.678}","timestamp":"2025-02-02T20:39:02.673Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":101.911}","timestamp":"2025-02-02T20:39:24.380Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T20:40:43.346Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T20:40:43.354Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":74.473}","timestamp":"2025-02-02T20:40:45.814Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.085}","timestamp":"2025-02-02T20:41:16.875Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.102}","timestamp":"2025-02-02T20:41:25.104Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T20:41:50.501Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":71.371}","timestamp":"2025-02-02T20:41:50.503Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":362.029}","timestamp":"2025-02-02T20:41:54.119Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":352.706}","timestamp":"2025-02-02T20:42:21.767Z"}
+{"level":"error","message":"Duplicate categories found: bfgb, footware, jfkdgbfbrtsf","timestamp":"2025-02-02T20:42:38.741Z"}
+{"level":"error","message":"The following categories already exist: bfgb, footware, jfkdgbfbrtsf","stack":"Error: The following categories already exist: bfgb, footware, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T20:42:38.742Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":71.494}","timestamp":"2025-02-02T20:42:38.743Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":69.171}","timestamp":"2025-02-02T20:42:44.051Z"}
+{"level":"error","message":"Invalid Category","stack":"Error: Invalid Category\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T20:43:49.127Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":69.875}","timestamp":"2025-02-02T20:43:49.128Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{categoryId}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{categoryId}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T20:44:07.800Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":2.598}","timestamp":"2025-02-02T20:44:07.801Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/review/\",\"status\":\"404\",\"responseTime\":1.694}","timestamp":"2025-02-02T20:44:36.067Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/review/\",\"status\":\"404\",\"responseTime\":0.404}","timestamp":"2025-02-02T20:44:39.822Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":137.207}","timestamp":"2025-02-02T20:46:38.196Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.998}","timestamp":"2025-02-02T20:46:45.877Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":69.662}","timestamp":"2025-02-02T20:47:56.743Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.862}","timestamp":"2025-02-02T20:48:07.942Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":69.361}","timestamp":"2025-02-02T20:48:43.975Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":68.697}","timestamp":"2025-02-02T20:49:06.870Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.619}","timestamp":"2025-02-02T20:49:36.187Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":68.045}","timestamp":"2025-02-02T20:50:10.417Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":65.931}","timestamp":"2025-02-02T20:50:16.837Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.701}","timestamp":"2025-02-02T20:50:26.098Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.72}","timestamp":"2025-02-02T20:50:42.210Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":65.386}","timestamp":"2025-02-02T20:50:48.967Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.727}","timestamp":"2025-02-02T20:51:05.844Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":65.205}","timestamp":"2025-02-02T20:52:29.314Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.175}","timestamp":"2025-02-02T20:52:43.571Z"}
+{"level":"error","message":"Unexpected token f in JSON at position 59","stack":"SyntaxError: Unexpected token f in JSON at position 59\n    at JSON.parse (<anonymous>)\n    at parse (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)\n    at invokeCallback (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:513:28)\n    at endReadableNT (node:internal/streams/readable:1359:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","statusCode":400,"timestamp":"2025-02-02T20:53:18.730Z"}
+{"level":"info","message":"Product created successfully","timestamp":"2025-02-02T20:53:26.817Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"201\",\"responseTime\":149.678}","timestamp":"2025-02-02T20:53:26.818Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":206.573}","timestamp":"2025-02-02T20:53:33.462Z"}
+{"level":"info","message":"Fetching cart for userId: 679fd7e074736088d2be0f2a","timestamp":"2025-02-02T20:53:51.396Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":85.831}","timestamp":"2025-02-02T20:53:51.472Z"}
+{"level":"error","message":"Product not found","stack":"Error: Product not found\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/cart.controller.js:38:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":404,"timestamp":"2025-02-02T20:53:57.195Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"404\",\"responseTime\":69.902}","timestamp":"2025-02-02T20:53:57.196Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":207.252}","timestamp":"2025-02-02T20:54:04.764Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":212.58}","timestamp":"2025-02-02T20:54:45.894Z"}
+{"level":"info","message":"Product 679fdb466266175861883c3f added to the cart for user 679fd7e074736088d2be0f2a","timestamp":"2025-02-02T20:55:19.837Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":282.452}","timestamp":"2025-02-02T20:55:19.839Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/cart/\",\"status\":\"404\",\"responseTime\":0.26}","timestamp":"2025-02-02T20:55:30.672Z"}
+{"level":"info","message":"Fetching cart for userId: 679fd7e074736088d2be0f2a","timestamp":"2025-02-02T20:55:57.885Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":134.78}","timestamp":"2025-02-02T20:55:58.019Z"}
+{"level":"info","message":"Fetching cart for userId: 679fd7e074736088d2be0f2a","timestamp":"2025-02-02T20:57:02.490Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":138.897}","timestamp":"2025-02-02T20:57:02.628Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/cart/679fd7e074736088d2be0f2c%7D\",\"status\":\"200\",\"responseTime\":289.405}","timestamp":"2025-02-02T20:57:15.654Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"403\",\"responseTime\":3.849}","timestamp":"2025-02-02T20:57:30.715Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":356.166}","timestamp":"2025-02-02T20:57:40.353Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"201\",\"responseTime\":431.293}","timestamp":"2025-02-02T20:57:44.548Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/order/\",\"status\":\"200\",\"responseTime\":67.892}","timestamp":"2025-02-02T20:57:49.428Z"}
+{"level":"error","message":"Order not found with id 679f75165e8a25d9be4adce3","stack":"Error: Order not found with id 679f75165e8a25d9be4adce3\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/payment.controller.js:11:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":404,"timestamp":"2025-02-02T20:57:57.597Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/payment/\",\"status\":\"404\",\"responseTime\":67.029}","timestamp":"2025-02-02T20:57:57.598Z"}
+{"level":"error","message":"Cart is empty","stack":"Error: Cart is empty\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/order.controller.js:16:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:00:03.603Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"400\",\"responseTime\":68.069}","timestamp":"2025-02-02T21:00:03.605Z"}
+{"level":"info","message":"Cart created successfully","timestamp":"2025-02-02T21:00:12.827Z","user_id":"679fdcdc6266175861883c6d"}
+{"level":"info","message":"User created successfully","timestamp":"2025-02-02T21:00:12.901Z","username":"nil"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"201\",\"responseTime\":532.358}","timestamp":"2025-02-02T21:00:12.902Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":355.175}","timestamp":"2025-02-02T21:00:16.583Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":161.731}","timestamp":"2025-02-02T21:00:18.916Z"}
+{"level":"info","message":"Product created successfully","timestamp":"2025-02-02T21:00:27.219Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"201\",\"responseTime\":159.82}","timestamp":"2025-02-02T21:00:27.220Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":196.843}","timestamp":"2025-02-02T21:00:30.149Z"}
+{"level":"info","message":"Fetching cart for userId: 679fdcdc6266175861883c6d","timestamp":"2025-02-02T21:00:35.944Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":68.725}","timestamp":"2025-02-02T21:00:36.012Z"}
+{"level":"info","message":"Product 679fdceb6266175861883c7a added to the cart for user 679fdcdc6266175861883c6d","timestamp":"2025-02-02T21:00:38.506Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":274.07}","timestamp":"2025-02-02T21:00:38.507Z"}
+{"level":"info","message":"Fetching cart for userId: 679fdcdc6266175861883c6d","timestamp":"2025-02-02T21:01:16.927Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":133.889}","timestamp":"2025-02-02T21:01:17.061Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/cart/679fdcdc6266175861883c6f%7D\",\"status\":\"200\",\"responseTime\":291.864}","timestamp":"2025-02-02T21:01:51.750Z"}
+{"level":"info","message":"Fetching cart for userId: 679fdcdc6266175861883c6d","timestamp":"2025-02-02T21:01:55.974Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":140.09}","timestamp":"2025-02-02T21:01:56.114Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"201\",\"responseTime\":446.733}","timestamp":"2025-02-02T21:02:05.325Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/order/\",\"status\":\"200\",\"responseTime\":71.06}","timestamp":"2025-02-02T21:02:11.189Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T21:12:43.130Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T21:12:43.141Z"}
+{"level":"info","message":"Cart created successfully","timestamp":"2025-02-02T21:12:51.412Z","user_id":"679fdfd390565aa28e1b6505"}
+{"level":"info","message":"User created successfully","timestamp":"2025-02-02T21:12:51.501Z","username":"nil"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"201\",\"responseTime\":563.527}","timestamp":"2025-02-02T21:12:51.508Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":406.033}","timestamp":"2025-02-02T21:12:52.460Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/payment/\",\"status\":\"403\",\"responseTime\":0.855}","timestamp":"2025-02-02T21:12:53.020Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:13:42.388Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":71.53}","timestamp":"2025-02-02T21:13:42.391Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":364.94}","timestamp":"2025-02-02T21:13:43.098Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/payment/\",\"status\":\"403\",\"responseTime\":0.558}","timestamp":"2025-02-02T21:13:43.606Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":69.347}","timestamp":"2025-02-02T21:13:44.051Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.176}","timestamp":"2025-02-02T21:13:44.571Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:14:09.503Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":100.551}","timestamp":"2025-02-02T21:14:09.506Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":363.547}","timestamp":"2025-02-02T21:14:10.200Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/payment/\",\"status\":\"403\",\"responseTime\":0.353}","timestamp":"2025-02-02T21:14:10.656Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":74.844}","timestamp":"2025-02-02T21:14:11.287Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.397}","timestamp":"2025-02-02T21:14:11.798Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:14:20.406Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":68.341}","timestamp":"2025-02-02T21:14:20.408Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":363.656}","timestamp":"2025-02-02T21:14:21.107Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/payment/\",\"status\":\"403\",\"responseTime\":0.361}","timestamp":"2025-02-02T21:14:21.527Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":72.001}","timestamp":"2025-02-02T21:14:22.031Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.69}","timestamp":"2025-02-02T21:14:22.562Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:15:00.652Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":67.682}","timestamp":"2025-02-02T21:15:00.654Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":367.265}","timestamp":"2025-02-02T21:15:01.445Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":148.071}","timestamp":"2025-02-02T21:15:02.003Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.787}","timestamp":"2025-02-02T21:15:02.438Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.895}","timestamp":"2025-02-02T21:15:16.025Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.649}","timestamp":"2025-02-02T21:15:25.447Z"}
+{"level":"info","message":"Cart created successfully","timestamp":"2025-02-02T21:15:59.526Z","user_id":"679fe08f90565aa28e1b6527"}
+{"level":"info","message":"User created successfully","timestamp":"2025-02-02T21:15:59.601Z","username":"nil"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"201\",\"responseTime\":532.063}","timestamp":"2025-02-02T21:15:59.602Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":380.414}","timestamp":"2025-02-02T21:16:00.358Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":159.63}","timestamp":"2025-02-02T21:16:00.944Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":65.834}","timestamp":"2025-02-02T21:16:01.389Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:16:01.868Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":3.034}","timestamp":"2025-02-02T21:16:01.870Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:16:13.128Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":68.666}","timestamp":"2025-02-02T21:16:13.130Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":368.158}","timestamp":"2025-02-02T21:16:13.847Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T21:16:14.334Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:16:14.336Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":71.859}","timestamp":"2025-02-02T21:16:14.338Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":75.031}","timestamp":"2025-02-02T21:16:15.064Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":69.331}","timestamp":"2025-02-02T21:16:15.596Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:16:15.993Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":2.896}","timestamp":"2025-02-02T21:16:15.995Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:16:27.641Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":68.588}","timestamp":"2025-02-02T21:16:27.642Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":354.952}","timestamp":"2025-02-02T21:16:28.371Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T21:16:28.971Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:16:28.972Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":84.801}","timestamp":"2025-02-02T21:16:28.973Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":68.906}","timestamp":"2025-02-02T21:16:29.411Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.382}","timestamp":"2025-02-02T21:16:29.792Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:16:30.136Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":1.152}","timestamp":"2025-02-02T21:16:30.137Z"}
+{"level":"error","message":"Invalid Category","stack":"Error: Invalid Category\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:16:38.160Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":68.118}","timestamp":"2025-02-02T21:16:38.163Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":68.563}","timestamp":"2025-02-02T21:16:44.122Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.933}","timestamp":"2025-02-02T21:16:56.958Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":70.205}","timestamp":"2025-02-02T21:17:50.389Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:17:59.716Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":66.81}","timestamp":"2025-02-02T21:17:59.717Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":368.065}","timestamp":"2025-02-02T21:18:00.492Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T21:18:00.958Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:18:00.959Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":68.906}","timestamp":"2025-02-02T21:18:00.961Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":67.839}","timestamp":"2025-02-02T21:18:01.384Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.968}","timestamp":"2025-02-02T21:18:01.806Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:18:02.151Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":1.336}","timestamp":"2025-02-02T21:18:02.152Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.018}","timestamp":"2025-02-02T21:18:13.995Z"}
+{"level":"error","message":"Invalid Category","stack":"Error: Invalid Category\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:18:33.096Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":69.559}","timestamp":"2025-02-02T21:18:33.098Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":138.927}","timestamp":"2025-02-02T21:18:39.240Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":70.094}","timestamp":"2025-02-02T21:18:46.463Z"}
+{"level":"error","message":"Invalid Category","stack":"Error: Invalid Category\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:18:50.300Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":67.888}","timestamp":"2025-02-02T21:18:50.302Z"}
+{"level":"info","message":"Cart created successfully","timestamp":"2025-02-02T21:19:29.628Z","user_id":"679fe16190565aa28e1b6551"}
+{"level":"info","message":"User created successfully","timestamp":"2025-02-02T21:19:29.705Z","username":"nil"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"201\",\"responseTime\":552.054}","timestamp":"2025-02-02T21:19:29.707Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":393.301}","timestamp":"2025-02-02T21:19:30.491Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":162.992}","timestamp":"2025-02-02T21:19:31.057Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.228}","timestamp":"2025-02-02T21:19:31.509Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:19:31.875Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":2.938}","timestamp":"2025-02-02T21:19:31.878Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:19:43.624Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":1.992}","timestamp":"2025-02-02T21:19:43.626Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.55}","timestamp":"2025-02-02T21:20:19.088Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T21:20:28.027Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:20:28.028Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":67.642}","timestamp":"2025-02-02T21:20:28.029Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:20:58.636Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":71.564}","timestamp":"2025-02-02T21:20:58.638Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":491.733}","timestamp":"2025-02-02T21:21:00.287Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":235.79}","timestamp":"2025-02-02T21:21:01.322Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":82.448}","timestamp":"2025-02-02T21:21:02.284Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:21:03.189Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":3.251}","timestamp":"2025-02-02T21:21:03.191Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:21:20.179Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":1.908}","timestamp":"2025-02-02T21:21:20.180Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T21:34:39.716Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T21:34:39.721Z"}
+{"level":"info","message":"\n mongo db connected !! db host: cluster0-shard-00-00.4v9hr.mongodb.net","timestamp":"2025-02-02T21:34:41.809Z"}
+{"level":"info","message":"Server is running on port 9000","timestamp":"2025-02-02T21:34:41.813Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":87.583}","timestamp":"2025-02-02T21:34:46.241Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":73.638}","timestamp":"2025-02-02T21:36:33.688Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/products\",\"status\":\"200\",\"responseTime\":138.758}","timestamp":"2025-02-02T21:38:13.458Z"}
+{"level":"info","message":"Product created successfully","timestamp":"2025-02-02T21:40:01.609Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"201\",\"responseTime\":165.826}","timestamp":"2025-02-02T21:40:01.611Z"}
+{"level":"info","message":"Product created successfully","timestamp":"2025-02-02T21:40:43.432Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"201\",\"responseTime\":150.589}","timestamp":"2025-02-02T21:40:43.435Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.548}","timestamp":"2025-02-02T21:41:10.407Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":370.776}","timestamp":"2025-02-02T21:41:17.102Z"}
+{"level":"info","message":"Fetching cart for userId: 679fe16190565aa28e1b6551","timestamp":"2025-02-02T21:41:22.369Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":77.801}","timestamp":"2025-02-02T21:41:22.444Z"}
+{"level":"info","message":"Product 679fe65befba7f132357345f added to the cart for user 679fe16190565aa28e1b6551","timestamp":"2025-02-02T21:41:39.630Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":303.888}","timestamp":"2025-02-02T21:41:39.635Z"}
+{"level":"info","message":"{\"method\":\"PUT\",\"url\":\"/api/cart/679fe16190565aa28e1b6553\",\"status\":\"200\",\"responseTime\":302.785}","timestamp":"2025-02-02T21:42:21.999Z"}
+{"level":"info","message":"{\"method\":\"DELETE\",\"url\":\"/api/cart/679fe16190565aa28e1b6553\",\"status\":\"200\",\"responseTime\":281.124}","timestamp":"2025-02-02T21:42:28.319Z"}
+{"level":"info","message":"Product 679fe65befba7f132357345f added to the cart for user 679fe16190565aa28e1b6551","timestamp":"2025-02-02T21:42:32.755Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"200\",\"responseTime\":290.677}","timestamp":"2025-02-02T21:42:32.759Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"201\",\"responseTime\":430.686}","timestamp":"2025-02-02T21:42:39.085Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/order/\",\"status\":\"200\",\"responseTime\":70.383}","timestamp":"2025-02-02T21:42:44.997Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"200\",\"responseTime\":75.903}","timestamp":"2025-02-02T21:43:13.670Z"}
+{"level":"info","message":"Cart created successfully","timestamp":"2025-02-02T21:54:21.482Z","user_id":"679fe98defba7f1323573486"}
+{"level":"info","message":"User created successfully","timestamp":"2025-02-02T21:54:21.564Z","username":"nil"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"201\",\"responseTime\":580.603}","timestamp":"2025-02-02T21:54:21.565Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":384.541}","timestamp":"2025-02-02T21:54:22.366Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"201\",\"responseTime\":165.462}","timestamp":"2025-02-02T21:54:22.929Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":68.94}","timestamp":"2025-02-02T21:54:23.339Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.719}","timestamp":"2025-02-02T21:54:57.776Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:55:11.523Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":69.565}","timestamp":"2025-02-02T21:55:11.525Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":370.942}","timestamp":"2025-02-02T21:55:12.286Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T21:55:12.804Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:55:12.805Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":69.586}","timestamp":"2025-02-02T21:55:12.806Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":70.153}","timestamp":"2025-02-02T21:55:13.353Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.215}","timestamp":"2025-02-02T21:55:45.657Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:55:52.508Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":98.019}","timestamp":"2025-02-02T21:55:52.513Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":381.534}","timestamp":"2025-02-02T21:55:53.349Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T21:55:53.907Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:55:53.909Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":73.601}","timestamp":"2025-02-02T21:55:53.910Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":68.391}","timestamp":"2025-02-02T21:55:54.417Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:55:54.833Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":7.9}","timestamp":"2025-02-02T21:55:54.838Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.502}","timestamp":"2025-02-02T21:55:55.248Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:56:22.034Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":68.131}","timestamp":"2025-02-02T21:56:22.036Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":375.303}","timestamp":"2025-02-02T21:56:22.803Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T21:56:23.441Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:56:23.442Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":76.21}","timestamp":"2025-02-02T21:56:23.443Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.385}","timestamp":"2025-02-02T21:56:24.086Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:56:24.588Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":2.854}","timestamp":"2025-02-02T21:56:24.590Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.336}","timestamp":"2025-02-02T21:56:25.054Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":77.862}","timestamp":"2025-02-02T21:56:25.625Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":1.692}","timestamp":"2025-02-02T21:56:26.100Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":72.533}","timestamp":"2025-02-02T21:56:26.814Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.741}","timestamp":"2025-02-02T21:56:27.313Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":69.148}","timestamp":"2025-02-02T21:56:28.040Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.272}","timestamp":"2025-02-02T21:56:28.390Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":67.27}","timestamp":"2025-02-02T21:56:28.820Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.735}","timestamp":"2025-02-02T21:56:29.324Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":69.1}","timestamp":"2025-02-02T21:56:29.786Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.322}","timestamp":"2025-02-02T21:56:30.175Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":69.666}","timestamp":"2025-02-02T21:56:30.668Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.471}","timestamp":"2025-02-02T21:56:31.022Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":73.222}","timestamp":"2025-02-02T21:56:31.487Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.351}","timestamp":"2025-02-02T21:56:31.879Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":71.597}","timestamp":"2025-02-02T21:56:32.340Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.642}","timestamp":"2025-02-02T21:56:32.748Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":68.643}","timestamp":"2025-02-02T21:56:33.267Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.335}","timestamp":"2025-02-02T21:56:33.836Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:56:57.611Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":69.475}","timestamp":"2025-02-02T21:56:57.615Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":393.252}","timestamp":"2025-02-02T21:56:58.401Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T21:56:58.872Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:56:58.873Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":79.083}","timestamp":"2025-02-02T21:56:58.874Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":68.528}","timestamp":"2025-02-02T21:56:59.402Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:56:59.755Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":1.323}","timestamp":"2025-02-02T21:56:59.757Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.318}","timestamp":"2025-02-02T21:57:00.135Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":70.825}","timestamp":"2025-02-02T21:57:00.603Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.237}","timestamp":"2025-02-02T21:57:00.966Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"403\",\"responseTime\":0.293}","timestamp":"2025-02-02T21:57:01.331Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:57:36.120Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":69.556}","timestamp":"2025-02-02T21:57:36.121Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":472.161}","timestamp":"2025-02-02T21:57:36.993Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T21:57:37.439Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:57:37.440Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":71.258}","timestamp":"2025-02-02T21:57:37.441Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.891}","timestamp":"2025-02-02T21:57:37.933Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:57:38.399Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":1.378}","timestamp":"2025-02-02T21:57:38.400Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.754}","timestamp":"2025-02-02T21:57:38.970Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":405.894}","timestamp":"2025-02-02T21:57:40.073Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":1.311}","timestamp":"2025-02-02T21:57:40.548Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"403\",\"responseTime\":0.318}","timestamp":"2025-02-02T21:57:40.947Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":69.394}","timestamp":"2025-02-02T21:57:41.449Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/order/\",\"status\":\"403\",\"responseTime\":1.41}","timestamp":"2025-02-02T21:57:41.976Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:58:15.056Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":67.664}","timestamp":"2025-02-02T21:58:15.058Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":389.444}","timestamp":"2025-02-02T21:58:15.908Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T21:58:16.349Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:58:16.350Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":71.902}","timestamp":"2025-02-02T21:58:16.351Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":66.724}","timestamp":"2025-02-02T21:58:16.791Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:58:17.148Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":1.983}","timestamp":"2025-02-02T21:58:17.149Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.283}","timestamp":"2025-02-02T21:58:17.527Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":69.149}","timestamp":"2025-02-02T21:58:17.958Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.27}","timestamp":"2025-02-02T21:58:18.288Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"403\",\"responseTime\":0.302}","timestamp":"2025-02-02T21:58:18.638Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":69.141}","timestamp":"2025-02-02T21:58:19.072Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/order/\",\"status\":\"403\",\"responseTime\":0.282}","timestamp":"2025-02-02T21:58:19.486Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":71.758}","timestamp":"2025-02-02T21:58:19.923Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"403\",\"responseTime\":0.312}","timestamp":"2025-02-02T21:58:20.269Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"403\",\"responseTime\":0.691}","timestamp":"2025-02-02T21:58:46.765Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":363.216}","timestamp":"2025-02-02T21:58:54.272Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"200\",\"responseTime\":73.383}","timestamp":"2025-02-02T21:58:57.780Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T21:59:05.124Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":71.032}","timestamp":"2025-02-02T21:59:05.126Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":415.913}","timestamp":"2025-02-02T21:59:05.940Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T21:59:06.359Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T21:59:06.360Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":74.797}","timestamp":"2025-02-02T21:59:06.364Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":70.888}","timestamp":"2025-02-02T21:59:06.813Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T21:59:07.227Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":1.949}","timestamp":"2025-02-02T21:59:07.229Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.309}","timestamp":"2025-02-02T21:59:07.603Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":69.727}","timestamp":"2025-02-02T21:59:08.072Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.257}","timestamp":"2025-02-02T21:59:08.437Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"403\",\"responseTime\":0.275}","timestamp":"2025-02-02T21:59:08.785Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":76.497}","timestamp":"2025-02-02T21:59:09.246Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/order/\",\"status\":\"403\",\"responseTime\":0.422}","timestamp":"2025-02-02T21:59:09.667Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":74.96}","timestamp":"2025-02-02T21:59:10.089Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"403\",\"responseTime\":0.369}","timestamp":"2025-02-02T21:59:10.453Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T22:00:11.215Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":67.874}","timestamp":"2025-02-02T22:00:11.216Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":421.621}","timestamp":"2025-02-02T22:00:12.036Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T22:00:12.544Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T22:00:12.545Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":68.984}","timestamp":"2025-02-02T22:00:12.547Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":67.396}","timestamp":"2025-02-02T22:00:13.035Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T22:00:13.425Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":1.111}","timestamp":"2025-02-02T22:00:13.426Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.268}","timestamp":"2025-02-02T22:00:13.904Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":73.478}","timestamp":"2025-02-02T22:00:14.414Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.46}","timestamp":"2025-02-02T22:00:15.003Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"403\",\"responseTime\":0.32}","timestamp":"2025-02-02T22:00:15.486Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":71.781}","timestamp":"2025-02-02T22:00:16.047Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/order/\",\"status\":\"403\",\"responseTime\":3.217}","timestamp":"2025-02-02T22:00:16.406Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":70.427}","timestamp":"2025-02-02T22:00:16.877Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"403\",\"responseTime\":0.254}","timestamp":"2025-02-02T22:00:17.297Z"}
+{"level":"error","message":"User with the same username or email already exists","stack":"Error: User with the same username or email already exists\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/user.controller.js:52:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":409,"timestamp":"2025-02-02T22:00:23.535Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/register\",\"status\":\"409\",\"responseTime\":71.64}","timestamp":"2025-02-02T22:00:23.538Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":420.974}","timestamp":"2025-02-02T22:00:24.372Z"}
+{"level":"error","message":"Duplicate categories found: footware, bfgb, jfkdgbfbrtsf","timestamp":"2025-02-02T22:00:24.811Z"}
+{"level":"error","message":"The following categories already exist: footware, bfgb, jfkdgbfbrtsf","stack":"Error: The following categories already exist: footware, bfgb, jfkdgbfbrtsf\n    at file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/category.controller.js:28:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","statusCode":400,"timestamp":"2025-02-02T22:00:24.813Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/category\",\"status\":\"400\",\"responseTime\":72.494}","timestamp":"2025-02-02T22:00:24.817Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/category\",\"status\":\"200\",\"responseTime\":68.247}","timestamp":"2025-02-02T22:00:25.334Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"","stack":"CastError: Cast to ObjectId failed for value \"{{categoryId}}\" (type string) at path \"_id\" for model \"Category\"\n    at SchemaObjectId.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schema\\objectId.js:250:11)\n    at SchemaType.applySetters (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaType.castForQuery (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at Query.cast (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4889:12)\n    at Query._castConditions (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOne (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:2630:8)\n    at model.Query.exec (C:\\FSDM\\TERM3\\MERN'\\term_3_react_project\\node_modules\\mongoose\\lib\\query.js:4438:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///C:/FSDM/TERM3/MERN'/term_3_react_project/backend/controllers/product.controller.js:50:26","timestamp":"2025-02-02T22:00:25.807Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/products\",\"status\":\"400\",\"responseTime\":1.34}","timestamp":"2025-02-02T22:00:25.808Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":0.321}","timestamp":"2025-02-02T22:00:26.246Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":74.189}","timestamp":"2025-02-02T22:00:26.687Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/cart/\",\"status\":\"403\",\"responseTime\":1.968}","timestamp":"2025-02-02T22:00:26.993Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/order/checkout\",\"status\":\"403\",\"responseTime\":0.325}","timestamp":"2025-02-02T22:00:27.354Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":68.64}","timestamp":"2025-02-02T22:00:27.838Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/order/\",\"status\":\"403\",\"responseTime\":0.372}","timestamp":"2025-02-02T22:00:28.191Z"}
+{"level":"info","message":"{\"method\":\"GET\",\"url\":\"/api/auth/refresh-token\",\"status\":\"200\",\"responseTime\":71.027}","timestamp":"2025-02-02T22:00:28.627Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/logout\",\"status\":\"403\",\"responseTime\":0.262}","timestamp":"2025-02-02T22:00:29.033Z"}

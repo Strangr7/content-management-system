@@ -26,6 +26,12 @@ product
 => ratng
 => deiscount
 
+product review
+=>
+=>
+=>
+=>
+
 **added later**
 => description
 
@@ -36,6 +42,15 @@ cart
 => product
 => quantity
 
+order
+=>_id
+=>orderNumber
+=>user
+=>items
+=>totalAMount
+=>payementMethod
+=>shippingAddress
+=>status
 
 products_purchased
 => _id

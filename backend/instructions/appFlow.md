@@ -8,3 +8,9 @@ user registers => user logs in => user logs out
 ***Cart flow*** refresnce in postman flows....
 
 ***Cart flow*** refresnce in postman flows....
+
+
+***checkut flow*** refresnce in postman flows....
+
+add to cart => checkout
+{so after cart user seletct 'proced to checkout' and on the chekout page fills all the details of order model}
