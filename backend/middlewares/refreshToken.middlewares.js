@@ -1,7 +1,7 @@
 // refreshAccessTokenMiddleware.js
 import jwt from "jsonwebtoken";
 import User from "../models/user.models.js";
-import { APIResponse } from "../utils/APIResponse.js";
+import { APIResponse } from "../utils/apiResponse.js";
 
 const refreshAccessTokenMiddleware = async (req, res, next) => {
   const refreshToken = req.cookies.refreshToken;

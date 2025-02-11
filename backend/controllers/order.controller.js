@@ -3,8 +3,7 @@ import Cart from "../models/cart.models.js";
 import Order from "../models/order.models.js";
 import Product from "../models/product.models.js";
 import { APIError } from "../utils/apiError.js";
-import { APIResponse } from "..//utils/APIResponse.js";
-import logger from "../utils/logger.js";
+import { APIResponse } from "../utils/apiResponse.js";
 
 const checkout = asyncHandler(async (req, res) => {
   const userId = req.user._id;

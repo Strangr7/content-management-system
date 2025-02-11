@@ -2,7 +2,7 @@ import Product from "../models/product.models.js";
 import Review from "../models/review.model.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { APIError } from "../utils/apiError.js";
-import { APIResponse } from "../utils/APIResponse.js";
+import { APIResponse } from "../utils/apiResponse.js";
 
 //add review to a product
 const addReview = asyncHandler(async (req, res) => {

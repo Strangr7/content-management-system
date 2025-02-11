@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { APIError } from "../utils/APIError.js";
+import { APIError } from "../utils/apiError.js";
 import logger from "../utils/logger.js";
 
 const errorHandler = (err, req, res, next) => {
@@ -38,8 +38,8 @@ const errorHandler = (err, req, res, next) => {
   return res.status(error.statusCode).json(response);
 };
 
-// Async wrapper for controllers
-const asyncHandler = (fn) => (req, res, next) =>
-  Promise.resolve(fn(req, res, next)).catch(next);
+// // Async wrapper for controllers
+// const asyncHandler = (fn) => (req, res, next) =>
+//   Promise.resolve(fn(req, res, next)).catch(next);
 
-export { errorHandler, asyncHandler };
+export { errorHandler, };

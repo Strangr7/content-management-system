@@ -65,12 +65,8 @@ const productSchema = new Schema(
     },
 
     // URL of the product's main image
-    image: {
-      type: String,
-      required: true,
-    },
+    images: [{ type: String, requireed: true }],
 
-    
     reviews: [
       {
         type: mongoose.Schema.Types.ObjectId,

@@ -3,8 +3,11 @@ import Category from "../models/category.models.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { APIError } from "../utils/apiError.js";
 import { APIResponse } from "../utils/apiResponse.js";
+import { uploadOnCloudinary } from "../utils/clodinary.js";
 import logger from "../utils/logger.js";
+
 import mongoose from "mongoose";
+import multer from "multer";
 
 // Helper function to build product filter
 const buildProductFilter = (categoryId, status, minPrice, maxPrice) => {
@@ -51,9 +54,17 @@ const createProduct = asyncHandler(async (req, res) => {
   if (!categoryExists) {
     throw new APIError(400, "Invalid Category");
   }
-
+  const images = [];
+  if (req.files && req.files["ProductImages"]) {
+    for (const file of req.files["ProductImages"]) {
+      const cloudinaryResponse = await uploadOnCloudinary(file.path);
+      if (cloudinaryResponse) {
+        images.push(cloudinaryResponse.secure_url);
+      }
+    }
+  }
   // Create and save product
-  const product = new Product(req.body);
+  const product = new Product(...req.body, images);
   await product.save();
   logger.info("Product created successfully");
 
@@ -91,20 +102,18 @@ const getProducts = asyncHandler(async (req, res) => {
 
   const totalProducts = await Product.countDocuments(filter);
 
-  res
-    .status(200)
-    .json(
-      new APIResponse(
-        200,
-        {
-          products,
-          totalProducts,
-          currentPage: pageNumber,
-          totalPages: Math.ceil(totalProducts / limitNumber),
-        },
-        "Products fetched successfully"
-      )
-    );
+  res.status(200).json(
+    new APIResponse(
+      200,
+      {
+        products,
+        totalProducts,
+        currentPage: pageNumber,
+        totalPages: Math.ceil(totalProducts / limitNumber),
+      },
+      "Products fetched successfully"
+    )
+  );
 });
 
 // Get all products for a specific category
@@ -143,20 +152,18 @@ const getProductbyCategory = asyncHandler(async (req, res) => {
 
   const totalProducts = await Product.countDocuments(filter);
 
-  res
-    .status(200)
-    .json(
-      new APIResponse(
-        200,
-        {
-          products,
-          totalProducts,
-          currentPage: parseInt(page),
-          totalPages: Math.ceil(totalProducts / limit),
-        },
-        "Products fetched successfully"
-      )
-    );
+  res.status(200).json(
+    new APIResponse(
+      200,
+      {
+        products,
+        totalProducts,
+        currentPage: parseInt(page),
+        totalPages: Math.ceil(totalProducts / limit),
+      },
+      "Products fetched successfully"
+    )
+  );
 });
 
 // Get a specific product by ID

@@ -1,6 +1,6 @@
 // middleware/auth.middlewares.js
 import jwt from "jsonwebtoken";
-import {APIResponse} from "../utils/APIResponse.js";
+import {APIResponse} from "../utils/apiResponse.js";
 
 const authenticatedMiddleware = (req, res, next) => {
   const accessToken = req.headers.authorization?.split(" ")[1]; // Extract token from the Authorization header
