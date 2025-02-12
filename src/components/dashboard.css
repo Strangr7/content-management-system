@@ -1,0 +1,102 @@
+/* Dashboard Container */
+.contain {
+    display: flex;
+    /* min-height: 100vh; */
+    background-color: #f5f6fa;
+    position: relative;
+}
+
+/* Left Navigation Bar */
+.nav-bar-right {
+    width: 250px;
+    background-color: #5680a9;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* User Icon */
+.user-icon-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Container */
+/* Content Container */
+.content-container {
+    margin-left: 250px;
+    padding: 80px 30px 30px;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #f5f6fa;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Field Box */
+.field-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.field-box input {
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.field-box input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Navigation Links */
+.nav-bar-right a {
+    display: block;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: #f0f3f5;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.nav-bar-right a:hover {
+    background-color: #56b17b;
+    color: #ffffff;
+}
+
+.dashboard-title h1 {
+    color: #ecf0f1;
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    text-align: center;
+}
