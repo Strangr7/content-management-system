@@ -15,6 +15,10 @@ const cartItemSchema = new Schema({
     type: Number,
     required: true,
   },
+  discount: {
+    type: Number,
+    default: 0,
+  },
 });
 
 const cartSchema = new Schema(
@@ -26,9 +30,33 @@ const cartSchema = new Schema(
       unique: true,
     },
     items: [cartItemSchema],
-    totalPrice: { 
+    subtotal: {
       type: Number,
       default: 0,
+    },
+    totalDiscount: {
+      type: Number,
+      default: 0,
+    },
+    total: {
+      type: Number,
+      default: 0,
+    },
+    coupon: {
+      type: String, // Coupon code (e.g., "DISCOUNT10")
+      default: null,
+    },
+    couponDiscount: {
+      type: Number, // Discount amount from coupon
+      default: 0,
+    },
+    tax: {
+      type: Number, // Tax amount
+      default: 0,
+    },
+    expiresAt: {
+      type: Date,
+      default: () => new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // 30 days from creation
     },
   },
   { timestamps: true }
