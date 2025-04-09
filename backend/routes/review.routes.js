@@ -1,9 +1,11 @@
 import { Router } from "express";
 import { authenticatedMiddleware } from "../middlewares/auth.middlewares.js";
-import { addReview, getReviews } from "../controllers/review.controller.js";
+import { addReview, getReviews, deleteReview } from "../controllers/review.controller.js";
+
 const router = Router();
 
-router.post("/product/:productId/review", authenticatedMiddleware, addReview);
-router.get("/product/:productId/reviews", getReviews);
+router.post("/product/:productId", authenticatedMiddleware, addReview);
+router.get("/product/:productId", getReviews);
+router.delete("/product/:productId", authenticatedMiddleware, deleteReview);
 
 export default router;
