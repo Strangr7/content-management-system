@@ -6,7 +6,7 @@ import {
 } from "../controllers/user.controller.js";
 import { authenticatedMiddleware } from "../middlewares/auth.middlewares.js";
 import { refreshAccessTokenMiddleware } from "../middlewares/refreshToken.middlewares.js";
-import { upload } from "../middlewares/multer.middlewares.js";
+import { uploadProductImages } from "../middlewares/multer.middlewares.js";
 
 const router = Router();
 

@@ -10,6 +10,7 @@ import cartRoutes from "./routes/cart.routes.js";
 import orderRoutes from "./routes/order.routes.js";
 import paymentRoutes from "./routes/payment.routes.js";
 import reviewRoutes from "./routes/review.routes.js";
+import aboutRoutes from "./routes/about.routes.js"
 import logger from "./utils/logger.js";
 
 const app = express();
@@ -52,6 +53,7 @@ app.use("/api/cart", cartRoutes);
 app.use("/api/order", orderRoutes);
 app.use("/api/payment", paymentRoutes);
 app.use("/api/review", reviewRoutes);
+app.use("/api/about",aboutRoutes)
 
 app.use(errorHandler);
 export { app };

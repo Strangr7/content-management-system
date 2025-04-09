@@ -33,21 +33,23 @@ const userSchema = new Schema(
   { timestamps: true }
 );
 
-// hasing the password before saving
-
+// Hash the password before saving
 userSchema.pre("save", async function (next) {
-
-  if (!this.isModified("password")) return next();
-  const salt = parseInt(process.env.BCRYPT_SALT_ROUNDS) || 10
-  this.password = await bcrypt.hash(this.password, salt);
-  next();
+  try {
+    if (!this.isModified("password")) return next();
+    const saltRounds = parseInt(process.env.BCRYPT_SALT_ROUNDS) || 10;
+    this.password = await bcrypt.hash(this.password, saltRounds);
+    next();
+  } catch (error) {
+    next(error);
+  }
 });
 
-// compare the password
-
+// Compare the password
 userSchema.methods.comparePassword = async function (password) {
   return await bcrypt.compare(password, this.password);
 };
+
 const User = mongoose.model("User", userSchema);
 
 export default User;

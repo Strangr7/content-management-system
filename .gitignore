@@ -1,1 +1,47 @@
+# Node modules
+/node_modules/
+
+# Environment files
 .env
+.env.*       # for things like .env.production or .env.local
+
+# Logs
+/app.log
+*.log        # any other log files
+
+# OS / IDE files
+.DS_Store    # macOS
+Thumbs.db    # Windows
+*.swp        # vim
+.vscode/     # VS Code settings (optional)
+.idea/       # WebStorm/IntelliJ settings
+
+# Dependency folders
+/npm-debug.log*
+/yarn-debug.log*
+/yarn-error.log*
+
+# Build/output folders
+/dist/
+/build/
+/coverage/
+
+# Uploads or user-generated content
+public/uploads/
+tmp/
+temp/
+uploads/
+
+# Optional: PM2 logs and dumps
+pids
+*.pid
+*.seed
+*.pid.lock
+dump.rdb
+
+# Optional: testing and coverage
+coverage/
+*.lcov
+
+# Optional: TypeScript
+*.tsbuildinfo
