@@ -4,7 +4,11 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
-  { ignores: ['dist'] },
+  { ignores: [
+      '**/dist/**',
+      '**/node_modules/**',
+      '**/*.config.js'
+  ] },
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
@@ -28,6 +32,9 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      'react/prop-types': 'off',          // Disable if not using prop-types
+      'react/react-in-jsx-scope': 'off',  // Essential for React 17+
+      'jsx-quotes': ['error', 'prefer-single'] // Consistent JSX quotes
     },
   },
 ]
