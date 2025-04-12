@@ -1,0 +1,70 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Backend (Node/Express)
+/node_modules
+/.env
+/.npm
+/.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/dist
+
+# Frontend (React)
+/frontend/node_modules
+/frontend/.env
+/frontend/build
+/frontend/.DS_Store
+/frontend/coverage
+frontend/.cache
+
+# MongoDB
+/data/db
+*.log
+
+# IDE/Editor
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# === Backend (Node/Express) ===
+backend/node_modules
+backend/.env
+backend/.npm
+backend/*.log
+backend/dist
+
+
+# === Common ===
+.DS_Store
+*.log
+.idea/
+.vscode/
+.env.local
